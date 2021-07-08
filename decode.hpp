@@ -28,10 +28,16 @@ char convertToLetter(int decodedNum){
     decodedNum += 'a';
     if(decodedNum <= 122)
         return decodedNum;
-    else if(decodedNum == 123)
+    else if(decodedNum == 29)
         return ' ';
-    else if(decodedNum == 124)
+    else if(decodedNum == 30)
         return '"';
+    else if(decodedNum == 31)
+        return '.';
+    else if (decodedNum == 32)
+        return ',';
+    else if (decodedNum == 33)
+        return '\'';
     
     return '.';
 }  
